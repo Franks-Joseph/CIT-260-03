@@ -1,0 +1,88 @@
+// This is for Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+// I have no idea what Associative Arrays are
+// This is for C++
+
+#include <iostream> //for couts and cins
+using namespace std; //standard namespace
+
+/*
+Main () is a function. Functions typically have this syntax. 
+ Return type variable name ( parameter1, parameter2, ...) { statements }
+*/
+
+//This is a prototype variable. this makes it to where you can have Main() at the bottom.
+int addSomething(int a, int b);
+
+//int is the type, main is the name.
+int main() {
+  cout << "Hello World!\n";
+
+  //Remove the comments to use the code.
+  //here is a for loop
+  
+  /*
+  for (int i = 1; i <= 10; i++) 
+  {
+    //this will print the text 10 times. 
+    cout << "I like cake" << '\n';
+  }
+  */
+
+  //this is a condition statement
+  /*
+  int number = 5;
+  if(number < 10)
+  {
+    cout << "The church is true!" << '\n';
+  }
+  else
+  {
+    cout << "False! Bears beats Battlestar Galactica" << '\n';
+  }
+  */
+
+  //The word one and two are variables, they hold data to be used later. one and two are assigned with 1 and 2 as their data.
+  /*
+  int one = 1;
+  int two = 2;
+
+  //I am using the data that is in one and two here.
+  cout << one + two << '\n';
+  */
+
+  /*
+  Parameters make it to where you can call functions within another function. 
+  First you have to have the function that is going to be used inside the body of the other function first. 
+  This will be outside of Main() that is called addSomething()
+  */
+
+  /*
+  int total;
+  //You can see that I am using the addSomething() function.
+  total = addSomething (2, 5);
+  cout << "The total is: " << total;
+  */
+
+  //Here is an array. 
+  The array is called number[] and it has four spots in it that were created. 
+  Filling in the 4 numbers in  the {} and assigning it to number[] can be called, 
+  depending on what you want to access in the index of the array.
+
+  //index location     0   1   2   3 
+  int number[] =     {11, 22, 33, 44};
+  cout << number[0] << '\n';
+}
+
+/*Here is the function that is going to be used in another function. 
+This is technically bad code as Main() is going to be called last.
+This makes it so that all the other functions that are going to be running in it will have already run. 
+*/
+
+/*
+int addSomething (int a, int b)
+  {
+    int add;
+    add = a + b;
+    return add;
+  }
+*/
