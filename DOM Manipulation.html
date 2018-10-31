@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <p>Click the button to insert a new element into the list</p>
+
+    <!--Create the button-->
+    <button onclick="insertElement()">Click</button>
+
+    <!--The id here will be called in the JS code-->
+    <ul id="unorderedList">
+      <li>I</li>
+      <li>got</li>
+    </ul>
+
+    <p>Now we are going to have another list, except this time we are going to insert at the top of the list instead of at the end.</p>
+
+    <hr>
+
+    <p>Click the button to run the function</p>
+    <button onclick="insertStart()">Click</button>
+
+    <ul id="unorderedList_2">
+      <li>Number 2</li>
+      <li>Number 3</li>
+    </ul>
+
+    <hr>
+
+    <p>Click this button to undo what we just did</p>
+    <button onclick="Undo()">Click</button>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
